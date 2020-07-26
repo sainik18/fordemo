@@ -1044,7 +1044,7 @@ textarea.form-control-sm {
   height: 70px;
   width: 70px;
   border-radius: 50%;
-  background: rgba(134, 195, 58, 0.5);
+  background: #2075cf;
   color: #fff;
   border: 0;
   line-height: 70px;
@@ -1086,7 +1086,7 @@ textarea.form-control-sm {
 }
 
 .slick-arrow:hover {
-  background: #86c33a;
+  background: #2075cf;
 }
 
 .prevArrow {
@@ -2342,6 +2342,12 @@ blockquote p {
 
 .primaryBg {
   background: #737f94;
+}
+
+.homeSecBg {
+  background: url(../images/backgrounds/homebg.jpg);
+  background-repeat: no-repeat;
+  background-size: 120% 110%;
 }
 
 .primaryColor {
