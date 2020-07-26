@@ -2324,7 +2324,7 @@ blockquote p {
 /*# sourceMappingURL=maps/style.css.map */
 
 .fcard {
-  min-height: 455px;
+  min-height: 475px;
   margin-bottom: 15px;
 }
 
@@ -2337,7 +2337,7 @@ blockquote p {
 }
 
 .ffont {
-  font-family: Comic Sans MS;
+  font-family: TimesNewRoman;
 }
 
 .primaryBg {
@@ -2346,4 +2346,9 @@ blockquote p {
 
 .primaryColor {
   color: #737f94;
+}
+
+.serviceImg {
+  width: 200px;
+  height: 188px;
 }
