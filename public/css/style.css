@@ -467,7 +467,7 @@ body {
   width: 50px;
   border-width: 5px;
   border-style: solid;
-  border-color: rgba(134, 195, 58, 0.75) rgba(134, 195, 58, 0.75) rgba(134, 195, 58, 0.25) rgba(134, 195, 58, 0.25);
+  border-color: #2075cf #2075cf #2075cf7a #2075cf7a;
   border-radius: 100%;
   -webkit-animation: clockwise 1s linear infinite;
           animation: clockwise 1s linear infinite;
@@ -542,7 +542,7 @@ a.text-dark:hover {
   position: relative;
   height: 5px;
   width: 30px;
-  background: #86c33a;
+  background: #2075cf;
   border-radius: 10px;
   margin-bottom: 20px;
   display: block;
@@ -553,7 +553,7 @@ a.text-dark:hover {
   content: "";
   height: 100%;
   width: 50%;
-  background: #86c33a;
+  background: #2075cf;
   border-radius: 10px;
   right: -60%;
   top: 0;
@@ -564,7 +564,7 @@ a.text-dark:hover {
   content: "";
   height: 100%;
   width: 25%;
-  background: #86c33a;
+  background: #2075cf;
   border-radius: 10px;
   right: -100%;
   top: 0;
@@ -2326,6 +2326,15 @@ blockquote p {
 .fcard {
   min-height: 475px;
   margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.serviceCard {
+  border-radius: 15px !important;
+}
+
+.serviceCard .card-img-top {
+  border-radius: 15px !important;
 }
 
 .scard {
@@ -2345,6 +2354,7 @@ blockquote p {
 }
 
 .homeSecBg {
+  padding-top: 50px;
   background: url(../images/backgrounds/homebg.jpg);
   background-repeat: no-repeat;
   background-size: 120% 110%;
