@@ -116,7 +116,7 @@ html, body {
     -o-object-fit: cover;
        object-fit: cover;
     max-width: 170px;
-    max-height: 135px;
+    height: 70px;
     /* -webkit-filter: grayscale(100%) contrast(25%);
             filter: grayscale(100%) contrast(25%); */
     /* -webkit-transition: -webkit-filter 0.3s ease; */
