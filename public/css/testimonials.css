@@ -95,7 +95,7 @@ html, body {
   }
   .logogrid__item {
       width: 150px;
-      height: 150px;
+      height: 100px;
   }
   .logogrid__item {
     display: -webkit-box;
@@ -113,8 +113,8 @@ html, body {
       font-size: 16px;
   }
   .logogrid__img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    /* -o-object-fit: cover;
+       object-fit: cover; */
     max-width: 170px;
     height: 70px;
     /* -webkit-filter: grayscale(100%) contrast(25%);
