@@ -676,6 +676,10 @@ a.text-dark:hover {
   background: #1f2630 !important;
 }
 
+.bg-white {
+  background: #ffffff !important;
+}
+
 .bg-gray {
   background: #f5f6fa !important;
 }
