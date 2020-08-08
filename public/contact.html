@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <title>Damascus Info Tech</title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="plugins/fontawesome/font-awesome.min.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="plugins/animate/animate.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+    <!-- venobox popup -->
+    <link rel="stylesheet" href="plugins/venobox/venobox.css">
+    <!-- chart js -->
+    <script src="plugins/chart/Chart.bundle.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/contact.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- preloader start -->
+    <div class="preloader">
+        <div class="spin"></div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- header -->
+    <header>
+        <!-- navigation -->
+        <div class="navigation bg-white position-relative">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                    <a class="navbar-brand" href="index-2.html">
+                        <img class="img-fluid pb-lg-3" src="images/logo.png" width="200px" alt="Damascus">
+                    </a>
+                    <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+                        data-target="#navigation" aria-controls="navigation" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse text-center" id="navigation">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="service.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="testimonials.html">Clients</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- /navigation -->
+    </header>
+        <div class="container pt-5">
+            <div class="col-12 text-center">
+                <span class="section-title-border border-center"></span>
+                <h2 class="section-title text-dark">Get in touch</h2>
+              </div>
+            <section class="section2">
+                <div class="contactform">
+                    <h5>Drop us a line...</h5>
+                    <form action="#">
+                        <label for="firstname">
+                            <i class="cntfrmicn fa fa-user"></i>
+                            <input name="firstname" class="form-fields" type="text">
+                        </label>
+                        <label for="email">
+                            <i class="cntfrmicn fa fa-envelope"></i>
+                            <input name="email" class="form-fields" type="text">
+                        </label>
+                        <label for="contact">
+                            <i class="cntfrmicn fa fa-phone"></i>
+                            <input name="contact" class="form-fields" type="text">
+                        </label>
+                        <label for="textarea">
+                            <i class="cntfrmicn fa fa-comment"></i>
+                            <textarea class="form-fields" name="textarea" id="" cols="30" rows="10"></textarea>
+                        </label>
+                        <button class="form-fields button" value="Send" type="submit">Send <i
+                                class="fa fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCpPXfA6oLnreBZABQPBwiL5QimQx5qhoU'></script>
+                <div class="contmap" style='overflow:hidden;height:550px;width:100%;'>
+                    <div id='gmap_canvas' style='height:100%;width:100%;'></div>
+                    <div><small><a href="http://embedgooglemaps.com"> embed google maps </a></small></div>
+                    <div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small>
+                    </div>
+                    <style>
+                        #gmap_canvas img {
+                            max-width: none !important;
+                            background: none !important
+                        }
+                    </style>
+                </div>
+                <script
+                    type='text/javascript'>
+                    function init_map() { 
+                        var myOptions = { zoom: 15, center: new google.maps.LatLng(13.051583, 80.216527), mapTypeId: google.maps.MapTypeId.ROADMAP }; 
+                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); 
+                        marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(13.0520019,80.2017471) }); 
+                        infowindow = new google.maps.InfoWindow({ content: '<strong>Damascus Info tech</strong><br>#13/3, 2nd Floor, Logaiya Street<br> Saligramam, Chennai' }); 
+                        google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); 
+                        infowindow.open(map, marker); } 
+                        google.maps.event.addDomListener(window, 'load', init_map);
+                        </script>
+            </section>
+        </div>
+
+    <!-- footer -->
+    <footer>
+        <!-- main footer -->
+        <div class="section bg-secondary">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <!-- footer content -->
+                    <div class="col-lg-5 mb-5 mb-lg-0">
+                        <!-- logo -->
+                        <a class="mb-4 d-inline-block" href="index.html">
+                            <h4 class="white ffont">Damascus Info Tech,</h4>
+                        </a>
+                        <p class="text-light">Established In the year 2018. It is an Incorporate Certified Contact
+                            Center with full
+                            time Employees.</p>
+                        <h4 class="text-white mb-4 ffont">Follow Us On</h4>
+                        <!-- social links -->
+                        <ul class="list-inline social-icon-alt">
+                            <li class="list-inline-item">
+                                <a class="hover-ripple" target="_blank"
+                                    href="https://www.facebook.com/damascusinfotech/"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="hover-ripple" target="_blank"
+                                    href=" https://www.instagram.com/damascusinfotech/?hl=en"><i
+                                        class="fa fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="hover-ripple" target="_blank"
+                                    href="https://www.youtube.com/channel/UCb3SspF7DL7ZEwvSuc_3Pzw/featured?view_as=subscriber"><i
+                                        class="fa fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <!-- service list -->
+                            <div class="col-6 mb-5">
+                                <h4 class="text-white mb-4 ffont">Services</h4>
+                                <ul class="list-styled">
+                                    <li class="mb-3 text-light"><a class="text-light d-block" href="about.html">Company
+                                            History</a></li>
+                                    <li class="mb-3 text-light"><a class="text-light d-block" href="about.html">About
+                                            Us</a></li>
+                                    <li class="mb-3 text-light"><a class="text-light d-block"
+                                            href="contact.html">Contact Us</a></li>
+                                    <li class="mb-3 text-light"><a class="text-light d-block"
+                                            href="service.html">Services</a></li>
+                                    <li class="mb-3 text-light"><a class="text-light d-block"
+                                            href="privacy-policy.html">Privacy
+                                            Policy</a></li>
+                                </ul>
+                            </div>
+                            <!-- contact info -->
+                            <div class="col-6 mb-5">
+                                <h4 class="text-white mb-4 ffont">Contact Info</h4>
+                                <ul class="list-unstyled">
+                                    <li class="text-light mb-3">#13/3, 2nd Floor, Logaiya Street, Saligramam, Chennai,
+                                        Tamil Nadu 600093,
+                                        India</li>
+                                    <li class="text-light mb-3">+91 9962287259 </li>
+                                    <li class="text-light mb-3">info@damascusinfotech.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="bg-secondary-darken py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center mb-3 mb-md-0">
+                        <p class="mb-0 text-white"><span class="text-primary">Damascus Info Tech</span> &copy;
+                            <script>
+                                var CurrentYear = new Date().getFullYear()
+                                document.write(CurrentYear)
+                            </script> All Right Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- aos -->
+    <script src="plugins/aos/aos.js"></script>
+    <!-- venobox popup -->
+    <script src="plugins/venobox/venobox.min.js"></script>
+    <!-- Modernizer -->
+    <script src="plugins/modernizer/modernizr.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
