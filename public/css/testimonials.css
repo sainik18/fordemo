@@ -98,19 +98,20 @@ html, body {
       height: 100px;
   }
   .logogrid__item {
-    display: -webkit-box;
-    display: flex;
+    /* display: -webkit-box;
+    display: flex; */
     -webkit-box-align: center;
             align-items: center;
     -webkit-box-pack: center;
             justify-content: center;
   }
   .ctitle {
-      position: absolute;
-      margin-top: 45px;
+      /* position: absolute; */
+      /* margin-top: 45px; */
       font-weight: 600;
       color: #1e81f6;
       font-size: 16px;
+      text-align: center;
   }
   .logogrid__img {
     /* -o-object-fit: cover;
