@@ -46,7 +46,7 @@ html, body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/testimonials1Bg.jpg);
     display: flex;
     justify-content: center;
-    padding-top: 140px;
+    padding-top: 95px;
   }
 
   .serSec {
@@ -195,6 +195,22 @@ html, body {
   }
   .progress-circle:hover:after, .progress-circle:focus:after {
     transform: scale(0.8);
+  }
+
+  @media screen and (max-width: 992px){
+    .progress-circle {
+      height: 10rem;
+      width: 10rem;
+      margin: 4rem 2rem 0;
+    }
+
+    .progress-circle:after {
+      font-size: 2em;
+    }
+
+    .ptext {
+      font-size: 12px;
+    }
   }
   
   /**
@@ -637,7 +653,7 @@ border:1px solid #ECECEC;
 #customers-testimonials .item {
     text-align: center;
     padding: 50px;
-    margin-bottom:80px;
+    margin-bottom:50px;
     opacity: .2;
     -webkit-transform: scale3d(0.8, 0.8, 1);
     transform: scale3d(0.8, 0.8, 1);

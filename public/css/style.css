@@ -2258,6 +2258,10 @@ blockquote p {
 
 /* /blog */
 /* footer */
+
+.footer-section {
+  padding-top: 100px;
+}
 .list-styled {
   padding-left: 0;
 }
