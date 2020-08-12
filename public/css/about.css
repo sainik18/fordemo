@@ -8,6 +8,26 @@
     align-items: center;
   } */
   
+  .banner h1, .banner h3, .banner h6 {
+    margin: 0;
+    text-shadow: 2px 2px 6px #000;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .banner {
+    color: white !important;
+    /* background: url('../images/service.jpg') top left/cover no-repeat; */
+    height: 100%;
+    width: 100%;
+    background-repeat: round;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/about-us.jpg);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .teamSec {
     height: 100%;
     width: 100%;

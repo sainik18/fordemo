@@ -114,7 +114,8 @@
                                 class="fa fa-paper-plane"></i></button>
                     </form>
                 </div>
-                <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC2dX_MKQSxR2xaxm2hyDulpp_GtdVnxQo'></script>
+                <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+                <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
                 <div class="contmap" style='overflow:hidden;height:550px;width:100%;'>
                     <div id='gmap_canvas' style='height:100%;width:100%;'></div>
                     <div><small><a href="http://embedgooglemaps.com"> embed google maps </a></small></div>
@@ -127,17 +128,44 @@
                         }
                     </style>
                 </div>
-                <script
-                    type='text/javascript'>
-                    function init_map() { 
-                        var myOptions = { zoom: 15, center: new google.maps.LatLng(13.051583, 80.216527), mapTypeId: google.maps.MapTypeId.ROADMAP }; 
-                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); 
-                        marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(13.0520019,80.2017471) }); 
-                        infowindow = new google.maps.InfoWindow({ content: '<strong>Damascus Info tech</strong><br>#13/3, 2nd Floor, Logaiya Street<br> Saligramam, Chennai' }); 
-                        google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); 
-                        infowindow.open(map, marker); } 
-                        google.maps.event.addDomListener(window, 'load', init_map);
-                        </script>
+                <script type='text/javascript'>
+                var platform = new H.service.Platform({
+                    'apikey': 'jwDZC4htAXy80IapOMo1BVxRZ2Xy_--Vc8cMsbJGsPc'
+                });    
+                // Obtain the default map types from the platform object
+                    var maptypes = platform.createDefaultLayers();
+
+                // Instantiate (and display) a map object:
+                var map = new H.Map(
+                document.getElementById('gmap_canvas'),
+                maptypes.vector.normal.map,
+                {
+                    zoom: 16,
+                    center: { lng: 80.219530, lat: 13.053056 }
+                });
+                // Define a variable holding SVG mark-up that defines an icon image:
+                // var svgMarkup = '<svg width="24" height="24" ' +
+                //     'xmlns="http://www.w3.org/2000/svg">' +
+                //     '<rect stroke="white" fill="#1b468d" x="1" y="1" width="22" ' +
+                //     'height="22" /><text x="12" y="18" font-size="12pt" ' +
+                //     'font-family="Arial" font-weight="bold" text-anchor="middle" ' +
+                //     'fill="white">H</text></svg>';
+
+                var svgMarkup = '<svg width="42" height="42" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 413.099 413.099" style="enable-background:new 0 0 413.099 413.099;" xml:space="preserve"><g><g><g><path d="M206.549,0L206.549,0c-82.6,0-149.3,66.7-149.3,149.3c0,28.8,9.2,56.3,22,78.899l97.3,168.399c6.1,11,18.4,16.5,30,16.5    c11.601,0,23.3-5.5,30-16.5l97.3-168.299c12.9-22.601,22-49.601,22-78.901C355.849,66.8,289.149,0,206.549,0z M206.549,193.4    c-30,0-54.5-24.5-54.5-54.5s24.5-54.5,54.5-54.5s54.5,24.5,54.5,54.5C261.049,169,236.549,193.4,206.549,193.4z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#1273EB"/></g></g></g> </svg>';
+
+                // Create an icon, an object holding the latitude and longitude, and a marker:
+                var icon = new H.map.Icon(svgMarkup),
+                    coords = {lat: 13.052057, lng: 80.201919},
+                    center = {lat: 13.052032, lng: 80.205283},
+                    marker = new H.map.Marker(coords, {icon: icon})
+                    label = '<div>Damascus Info Tech</div>',
+                    marker.setData('hellooooo');
+
+                // Add the marker to the map and center the map at the location of the marker:
+                map.addObject(marker);
+                map.setCenter(center);
+
+                </script>
             </section>
         </div>
 
