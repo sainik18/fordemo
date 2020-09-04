@@ -1325,7 +1325,7 @@ textarea.form-control-sm {
 /* /navigation */
 /* hero slider */
 .hero-section {
-  padding: 160px 0 270px;
+  padding: 300px 0 280px;
 }
 
 .hero-slider {
@@ -2261,6 +2261,7 @@ blockquote p {
 
 .footer-section {
   padding-top: 100px;
+  padding-bottom: 0px;
 }
 .list-styled {
   padding-left: 0;

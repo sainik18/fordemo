@@ -70,15 +70,15 @@ html, body {
   }
 
   .section-title-border {
-      background: red;
+      background: #1e81f6;
   }
 
   .section-title-border::before {
-    background: red;
+    background: #1e81f6;
   }
 
   .section-title-border::after {
-    background: red;
+    background: #1e81f6;
   }
 
   .testi {
