@@ -212,6 +212,22 @@ html, body {
       font-size: 12px;
     }
   }
+
+  @media screen and (max-width: 509px){
+    .progress-circle {
+      height: 7rem;
+      width: 7rem;
+      margin: 3rem 2rem 0;
+    }
+
+    .progress-circle:after {
+      font-size: 2em;
+    }
+
+    .ptext {
+      font-size: 8px;
+    }
+  }
   
   /**
   * $step is set to 5 by default, meaning you can only use percentage classes in increments of five (e.g. 25, 30, 45, 50, and so on). This helps to reduce the size of the final CSS file. If you need a number that doesn't end in 0 or 5, you can change the text percentage while rounding the class up/down to the nearest 5.
